@@ -1,3 +1,7 @@
+import {Link } from 'react-router-dom';
+
+
+
 function Header() {
   return (
     <div className='header'>
@@ -9,7 +13,7 @@ function Header() {
             <p>самая вкусная пицца во вселенной</p>
           </div>
         </div>
-        <div className='header__cart'>
+        <Link to="/cart" className='header__cart'>
           <a href='/cart.html' className='button button--cart'>
             <span>520 ₽</span>
             <div className='button__delimiter'></div>
@@ -44,7 +48,7 @@ function Header() {
             </svg>
             <span>3</span>
           </a>
-        </div>
+        </Link>
       </div>
     </div>
   );
